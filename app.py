@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
-import mysql.connector
 import plotly.express as px
-from dotenv import load_dotenv
-import os
+
 
 # =====================================
 # PAGE CONFIGURATION
@@ -21,28 +19,43 @@ st.title("🛍️ Retail Sales Dashboard")
 st.sidebar.header("🔍 Dashboard Filters")
 
 # =====================================
-# DATABASE CONNECTION
-# =====================================
-load_dotenv()
 
-connection = mysql.connector.connect(
-    host=os.getenv("DB_HOST"),
-    user=os.getenv("DB_USER"),
-    password=os.getenv("DB_PASSWORD"),
-    database=os.getenv("DB_NAME")
+
+# =====================================
+# =====================================
+# =====================================
+# =====================================
+# LOAD DATA FROM CSV
+# =====================================
+
+df = pd.read_csv("sales_data.csv", sep=";")
+
+
+# Clean column names
+df.columns = (
+    df.columns
+      .str.strip()          # Remove spaces
+      .str.replace('"', '') # Remove quotes
 )
 
-st.success("✅ Connected Successfully!")
+# Remove quotes from string values (if any)
+for col in df.columns:
+    if df[col].dtype == "object":
+        df[col] = df[col].astype(str).str.replace('"', '').str.strip()
 
-# =====================================
-# FETCH DATA
-# =====================================
-query = "SELECT * FROM sales"
-df = pd.read_sql(query, connection)
+# Convert numeric columns
+df["quantity"] = pd.to_numeric(df["quantity"])
+df["price"] = pd.to_numeric(df["price"])
+
+st.success("✅ Data Loaded Successfully!")
+
+# Uncomment this temporarily if needed for debugging
+# st.write(df.columns)
 
 # =====================================
 # CREATE REVENUE COLUMN
 # =====================================
+
 df["Revenue"] = df["quantity"] * df["price"]
 
 # =====================================
@@ -233,8 +246,3 @@ st.download_button(
     file_name="filtered_sales_data.csv",
     mime="text/csv"
 )
-# =====================================
-# CLOSE DATABASE CONNECTION
-# =====================================
-
-connection.close()
