@@ -1,86 +1,98 @@
 # 🛍️ Retail Sales Dashboard
 
-## 📖 Project Overview
-
-The Retail Sales Dashboard is an interactive data analytics application developed using Python, Streamlit, MySQL, Pandas, and Plotly.
-
-The dashboard helps analyze retail sales performance through interactive visualizations, KPI cards, and dynamic filters. Users can explore sales data by city, category, and product while monitoring important business metrics.
+An interactive **Retail Sales Dashboard** built using **Python, Streamlit, Pandas, and Plotly**. This project helps analyze retail sales data through dynamic filters, KPI cards, interactive charts, and downloadable reports.
 
 ---
 
-## ✨ Features
+## 🚀 Live Demo
 
-- Interactive KPI Cards
-- Revenue by Product
-- Revenue by City
-- Monthly Revenue Trend
-- Category-wise Revenue Pie Chart
-- Dynamic Sidebar Filters
-- Download Filtered Data as CSV
-- MySQL Database Integration
-- Interactive Plotly Charts
+🔗 **Live Application:**  
+Paste your Streamlit app URL here
+
+Example:
+https://your-app-name.streamlit.app
 
 ---
 
-## 🛠️ Technologies Used
+## 📂 GitHub Repository
 
-- Python
-- Streamlit
-- MySQL
-- Pandas
-- Plotly Express
+🔗 https://github.com/Sreyarao204/Retail-Sales-Dashboard
 
 ---
 
-## 📊 Dashboard KPIs
+## 📌 Features
 
-- Total Revenue
-- Total Orders
-- Total Customers
-- Total Cities
+- 📊 KPI Dashboard
+  - Total Revenue
+  - Total Orders
+  - Total Customers
+  - Total Cities
+
+- 🔍 Interactive Filters
+  - City
+  - Category
+  - Product
+
+- 📈 Interactive Charts
+  - Revenue by Product
+  - Monthly Revenue Trend
+  - Revenue by City
+  - Category-wise Revenue
+
+- 📋 Sales Data Table
+
+- 📥 Download Filtered Data as CSV
 
 ---
 
-## 📈 Visualizations
+## 🛠️ Tech Stack
 
-- Revenue by Product
-- Revenue by City
-- Monthly Revenue Trend
-- Category-wise Revenue Distribution
+| Technology | Purpose |
+|------------|---------|
+| Python | Programming |
+| Streamlit | Dashboard Development |
+| Pandas | Data Analysis |
+| Plotly | Interactive Visualizations |
+| Git | Version Control |
+| GitHub | Project Hosting |
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
-Retail Sales Dashboard/
-
+```text
+Retail-Sales-Dashboard/
+│
 ├── app.py
-
-├── requirements.txt
-
-├── README.md
-
 ├── sales_data.csv
-
+├── requirements.txt
+├── README.md
 └── screenshots/
-
----
-
-## 🚀 How to Run
-
-### Clone the repository
-
-```bash
-git clone <repository-link>
 ```
 
-### Install dependencies
+---
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/Sreyarao204/Retail-Sales-Dashboard.git
+```
+
+### Move into Project Folder
+
+```bash
+cd Retail-Sales-Dashboard
+```
+
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the application
+### Run Application
 
 ```bash
 streamlit run app.py
@@ -88,18 +100,210 @@ streamlit run app.py
 
 ---
 
-## 🎯 Future Enhancements
+## 📊 Dashboard Preview
 
-- User Authentication
-- Date Range Filter
-- Sales Forecasting
-- Power BI Integration
-- Deployment on Streamlit Community Cloud
+> Add a screenshot named **dashboard.png** inside the **screenshots** folder.
+
+```text
+screenshots/dashboard.png
+```
+
+Then display it like this:
+
+```markdown
+![Retail Sales Dashboard](screenshots/dashboard.png)
+```
 
 ---
 
-## 👩‍💻 Developed By
+## 📈 Dashboard Insights
 
-**Sreya Rao Velgapuri**
+The dashboard provides:
 
-Aspiring Data Analyst
+- Revenue Analysis
+- Product Performance
+- Category-wise Sales
+- City-wise Revenue
+- Monthly Revenue Trends
+- Customer Insights
+- Downloadable Filtered Reports
+
+---
+
+## 🎯 Future Enhancements
+
+- Sales Forecasting
+- Customer Segmentation
+- Profit Analysis
+- Dark Mode
+- Interactive Maps
+- AI-based Sales Insights
+- Authentication
+
+---
+
+## 👩‍💻 Author
+
+**Sreya Rao**
+
+GitHub: https://github.com/Sreyarao204
+
+LinkedIn: # 🛍️ Retail Sales Dashboard
+
+An interactive **Retail Sales Dashboard** built using **Python, Streamlit, Pandas, and Plotly**. This project helps analyze retail sales data through dynamic filters, KPI cards, interactive charts, and downloadable reports.
+
+---
+
+## 🚀 Live Demo
+
+🔗 **Live Application:**  
+Paste your Streamlit app URL here
+
+Example:
+https://your-app-name.streamlit.app
+
+---
+
+## 📂 GitHub Repository
+
+🔗 https://github.com/Sreyarao204/Retail-Sales-Dashboard
+
+---
+
+## 📌 Features
+
+- 📊 KPI Dashboard
+  - Total Revenue
+  - Total Orders
+  - Total Customers
+  - Total Cities
+
+- 🔍 Interactive Filters
+  - City
+  - Category
+  - Product
+
+- 📈 Interactive Charts
+  - Revenue by Product
+  - Monthly Revenue Trend
+  - Revenue by City
+  - Category-wise Revenue
+
+- 📋 Sales Data Table
+
+- 📥 Download Filtered Data as CSV
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Programming |
+| Streamlit | Dashboard Development |
+| Pandas | Data Analysis |
+| Plotly | Interactive Visualizations |
+| Git | Version Control |
+| GitHub | Project Hosting |
+
+---
+
+## 📁 Project Structure
+
+```text
+Retail-Sales-Dashboard/
+│
+├── app.py
+├── sales_data.csv
+├── requirements.txt
+├── README.md
+└── screenshots/
+```
+
+---
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/Sreyarao204/Retail-Sales-Dashboard.git
+```
+
+### Move into Project Folder
+
+```bash
+cd Retail-Sales-Dashboard
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📊 Dashboard Preview
+
+> Add a screenshot named **dashboard.png** inside the **screenshots** folder.
+
+```text
+screenshots/dashboard.png
+```
+
+Then display it like this:
+
+```markdown
+![Retail Sales Dashboard](screenshots/dashboard.png)
+```
+
+---
+
+## 📈 Dashboard Insights
+
+The dashboard provides:
+
+- Revenue Analysis
+- Product Performance
+- Category-wise Sales
+- City-wise Revenue
+- Monthly Revenue Trends
+- Customer Insights
+- Downloadable Filtered Reports
+
+---
+
+## 🎯 Future Enhancements
+
+- Sales Forecasting
+- Customer Segmentation
+- Profit Analysis
+- Dark Mode
+- Interactive Maps
+- AI-based Sales Insights
+- Authentication
+
+---
+
+## 👩‍💻 Author
+
+**Sreya Rao**
+
+GitHub: https://github.com/Sreyarao204
+
+LinkedIn:https://www.linkedin.com/in/sreyarao24/
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
+
+---
